@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/mint-ui/lib/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body id='product'>
+    <div id="app" class="container">
+        <article>
+            <header>
+                <img src="./img/logo.jpg" class="logo">
+                <div class="tel">
+                    <img src="./img/icon-top-tel-l.jpg" class="tel-l">
+                    <a href="tel:0371-86561351"><p class="tel-r"><span>Tel: </span>0371-86561351</p></a>
+                </div>
+                <div class="menu">
+                    <mt-button @click.native="handleClick">
+                        <img src="./img/icon-top-menu.jpg">
+                    </mt-button>
+                </div>
+                <!-- menu导航栏 -->
+                <mt-popup v-model="popupVisible" position="top">
+                    <div class="allm">
+                        <div class="allmenu-a">
+                            <div class="allmenu-b">
+                                <a href="./index.html">
+                                    首页
+                                </a>
+                            </div>
+                        </div>
+                        <div class="allmenu-a">
+                            <div class="allmenu-b">
+                                <a href="./product_index.html">
+                                    破碎设备
+                                </a>
+                            </div>
+                        </div>
+                        <div class="allmenu-a">
+                            <div class="allmenu-b">
+                                <a href="./product_index.html">
+                                    磨粉设备
+                                </a>
+                            </div>
+                        </div>
+                        <div class="allmenu-a">
+                            <div class="allmenu-b">
+                                <a href="./product_index.html">
+                                    制砂设备
+                                </a>
+                            </div>
+                        </div>
+                        <div class="allmenu-a">
+                            <div class="allmenu-b">
+                                <a href="./product_index.html">
+                                    移动站
+                                </a>
+                            </div>
+                        </div>
+                        <div class="allmenu-a">
+                            <div class="allmenu-b">
+                                <a href="./case_index.html">
+                                    案例
+                                </a>
+                            </div>
+                        </div>
+                        <div class="allmenu-a">
+                            <div class="allmenu-b">
+                                <a href="./news_index.html">
+                                    新闻
+                                </a>
+                            </div>
+                        </div>
+                        <div class="allmenu-a">
+                            <div class="allmenu-b">
+                                <a href="./about_us.html">
+                                    关于我们
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </mt-popup>
+            </header>
+            <div class="banner">
+                <img src="./img/banner_news_index.jpg">
+                <div class="guide">
+                    <p class="intro">
+                        黎明重工，中国矿山破碎设备品质良好品牌，磨机行业标准起草单位。30多年来，专注于矿山破碎设备、建筑破碎设备、工业制粉设备和绿色建材设备的研发制造<span>，并提供专业的解决方案和成熟的配套产品，为客户创造价值</span>。
+                    </p>
+                    <ul class="list-unstyle title-list clearfix">
+                        <li class="l active"><a href="./product_index.html">破碎设备</a></li>
+                        <li class="m"><a href="./product_index.html">制砂设备</a></li>
+                        <li class="r"><a href="./product_index.html">磨粉设备</a></li>
+                    </ul>
+                </div>
+            </div>
+            <section class=" product product-list">
+                <div class="product-center">
+                    <p>破碎设备<span>智能</span></p>
+                </div>
+                <ul class="list-unstyle p-list">
+                    <li class="clearfix">
+                        <a href="./product_article.html">
+                            <img src="./img/product-index-pro1.jpg" alt="">
+                            <p class="title">HPT液压圆锥破碎机</p>
+                            <p class="intro">成品粒度：1-20mm</p>
+                            <p class="intro">产量： 55-700T/h</p>
+                            <p class="tags"><span>液压保护</span><span>安全可靠</span></p>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="./product_article.html">
+                            <img src="./img/product-index-pro1.jpg" alt="">
+                            <p class="title">HPT液压圆锥破碎机</p>
+                            <p class="intro">成品粒度：1-20mm</p>
+                            <p class="intro">产量： 55-700T/h</p>
+                            <p class="tags"><span>液压保护</span><span>安全可靠</span></p>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="./product_article.html">
+                            <img src="./img/product-index-pro1.jpg" alt="">
+                            <p class="title">HPT液压圆锥破碎机</p>
+                            <p class="intro">成品粒度：1-20mm</p>
+                            <p class="intro">产量： 55-700T/h</p>
+                            <p class="tags"><span>液压保护</span><span>安全可靠</span></p>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="./product_article.html">
+                            <img src="./img/product-index-pro1.jpg" alt="">
+                            <p class="title">HPT液压圆锥破碎机</p>
+                            <p class="intro">成品粒度：1-20mm</p>
+                            <p class="intro">产量： 55-700T/h</p>
+                            <p class="tags"><span>液压保护</span><span>安全可靠</span></p>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="./product_article.html">
+                            <img src="./img/product-index-pro1.jpg" alt="">
+                            <p class="title">HPT液压圆锥破碎机</p>
+                            <p class="intro">成品粒度：1-20mm</p>
+                            <p class="intro">产量： 55-700T/h</p>
+                            <p class="tags"><span>液压保护</span><span>安全可靠</span></p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="list-unstyle pager">
+                    <li><a href="">首页</a></li>
+                    <li><a href="">上一页</a></li>
+                    <li>1/5</li>
+                    <li><a href="">下一页</a></li>
+                    <li><a href="">尾页</a></li>
+                </ul>
+            </section>
+        </article>
+        <footer class="clearfix">
+            <div class="l">
+                <a href="#">
+                    <img src="./img/icon-bottom-chat.jpg">
+                    <span>我要留言</span>
+                    <p>我们将竭诚为您服务</p>
+                </a>
+            </div>
+            <div class="m">
+                <a href="#">
+                    <span>在线咨询</span></a>
+            </div>
+            <div class="r">
+                <a href="tel:0371-67986666">
+                    <img src="./img/icon-bottom-tel.jpg" alt="">
+                    <span>联系我们</span>
+                    <p>0371-67986666</p>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+<!-- 先引入 Vue -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/mint-ui@2.2.13/lib/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            popupVisible: false
+        },
+        methods: {
+            handleClick: function () {
+                this.popupVisible = true
+            }
+        }
+    })
+</script>
+<script>
+    window.onload = function () {
+        if (document.documentElement.clientWidth <= 750) {
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px'
+        } else {
+            document.documentElement.style.fontSize = '100px'
+        }
+
+    }
+</script>
+
+</html>

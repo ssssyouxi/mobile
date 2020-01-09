@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/mint-ui/lib/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body id='about'>
+    <div id="app" class="container">
+        <article>
+            <header>
+                <img src="./img/logo.jpg" class="logo">
+                <div class="tel">
+                    <img src="./img/icon-top-tel-l.jpg" class="tel-l">
+                    <a href="tel:0371-86561351"><p class="tel-r"><span>Tel: </span>0371-86561351</p></a>
+                </div>
+                <div class="menu">
+                    <mt-button @click.native="handleClick">
+                        <img src="./img/icon-top-menu.jpg">
+                    </mt-button>
+                </div>
+                <!-- menu导航栏 -->
+                <mt-popup v-model="popupVisible" position="top">
+                    <div class="allm">
+                        <div class="allmenu-a">
+                            <div class="allmenu-b">
+                                <a href="./index.html">
+                                    首页
+                                </a>
+                            </div>
+                        </div>
+                        <div class="allmenu-a">
+                            <div class="allmenu-b">
+                                <a href="./product_index.html">
+                                    破碎设备
+                                </a>
+                            </div>
+                        </div>
+                        <div class="allmenu-a">
+                            <div class="allmenu-b">
+                                <a href="./product_index.html">
+                                    磨粉设备
+                                </a>
+                            </div>
+                        </div>
+                        <div class="allmenu-a">
+                            <div class="allmenu-b">
+                                <a href="./product_index.html">
+                                    制砂设备
+                                </a>
+                            </div>
+                        </div>
+                        <div class="allmenu-a">
+                            <div class="allmenu-b">
+                                <a href="./product_index.html">
+                                    移动站
+                                </a>
+                            </div>
+                        </div>
+                        <div class="allmenu-a">
+                            <div class="allmenu-b">
+                                <a href="./case_index.html">
+                                    案例
+                                </a>
+                            </div>
+                        </div>
+                        <div class="allmenu-a">
+                            <div class="allmenu-b">
+                                <a href="./news_index.html">
+                                    新闻
+                                </a>
+                            </div>
+                        </div>
+                        <div class="allmenu-a">
+                            <div class="allmenu-b">
+                                <a href="./about_us.html">
+                                    关于我们
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </mt-popup>
+            </header>
+            <div class="banner">
+                <img src="./img/banner_news_index.jpg">
+                <div class="guide">
+                    <p class="title">走进黎明</p>
+                    <p class="intro">
+                        河南黎明重工科技股份有限公司创立于1987年，主要从事建筑、能源、交通等国家基础设施建设工程所需大型装备的研发制造、提供技术解决方案及配套产品。<span>30多年创新发展，已成为国内矿山机械行业软硬件实力兼具的企业。主导产品覆盖建筑破碎、矿山破碎、工业制粉和绿色建材四大产业模块共30余种。</span>
+                    </p>
+                </div>
+            </div>
+            <section class="about-intro">
+                <ul class="list-unstyle clearfix">
+                    <li>
+                        <img src="./img/about-intro1.jpg" alt="">
+                        <p>30余年生产<br class="hide" />研发经验</p>
+                    </li>
+                    <li>
+                        <img src="./img/about-intro2.jpg" alt="">
+                        <p>8万平方米<br class="hide" />公司总部</p>
+                    </li>
+                    <li>
+                        <img src="./img/about-intro3.jpg" alt="">
+                        <p>专利及科技<br class="hide" />成果奖100多项</p>
+                    </li>
+                    <li>
+                        <img src="./img/about-intro4.jpg" alt="">
+                        <p>远销130多个<br class="hide" />国家和地区</p>
+                    </li>
+                </ul>
+            </section>
+            <div class="line"></div>
+            <section class="about-company">
+                <p class="h1"><img src="./img/icon-about-company.jpg"> 公司总部与厂区</p>
+                <div class="swipe">
+                    <mt-swipe :auto="4000">
+                        <mt-swipe-item>
+                            <img src="./img/about-company1.jpg" alt="">
+                        </mt-swipe-item>
+                        <mt-swipe-item>
+                            <img src="./img/about-company1.jpg" alt="">
+                        </mt-swipe-item>
+                        <mt-swipe-item>
+                            <img src="./img/about-company1.jpg" alt="">
+                        </mt-swipe-item>
+                    </mt-swipe>
+                </div>
+            </section>
+            <section class="about-pro">
+                <p class="h1"><strong>产品分类</strong></p>
+            </section>
+            <section class="about-pro-list clearfix">
+                <ul class="list-unstyle">
+                    <li>
+                        <a href="./product_index.html" class="clearfix">
+                            <img src="./img/about-pro1.jpg" alt="">
+                            <div class="intro">
+                                <p>建筑矿山破碎设备</p>
+                                <p>各种顽石克星</p>
+                                <span>更多</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./product_index.html" class="clearfix">
+                            <img src="./img/about-pro2.jpg" alt="">
+                            <div class="intro">
+                                <p>建筑矿山破碎设备</p>
+                                <p>各种顽石克星</p>
+                                <span>更多</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./product_index.html" class="clearfix">
+                            <img src="./img/about-pro3.jpg" alt="">
+                            <div class="intro">
+                                <p>建筑矿山破碎设备</p>
+                                <p>各种顽石克星</p>
+                                <span>更多</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="about-server">
+                <p class="h1"><strong>我们的服务</strong></p>
+                <p class="content">
+                    服务网点遍布全国32个省、直辖市、自治区，数千名精通产品、技艺娴熟且经验丰富的服务工程师整装待发，随时为您提供细致入微的贴心服务。
+                </p>
+                <ul class="list-unstyle clearfix">
+                    <li>
+                        <p class="margin-top"><span class="big-num">2</span>小时内</p>
+                        <p>给予明确的解决方案</p>
+                    </li>
+                    <li>
+                        <p class="margin-top"><span class="big-num">24</span>小时内</p>
+                        <p>赶至客户现场处理</p>
+                    </li>
+                    <li>
+                        <p class="margin-top"><span class="big-num">36</span>小时内</p>
+                        <p>彻底解决产品故障</p>
+                    </li>
+                    <li class="sp">
+                        <p>1500+工程师 时刻待命</p>
+                        <p>EPC项目总包</p>
+                        <p>为您开启投资新征程</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="about-co">
+                <p class="h1"><strong>合作伙伴</strong></p>
+                <p class="content">黎明携手众多优秀的企业，为您投资带来一份可靠保障!</p>
+                <img src="./img/about-co1.jpg" alt="">
+                <img src="./img/about-co2.jpg" alt="">
+                <img src="./img/about-co3.jpg" alt="">
+                <img src="./img/about-co4.jpg" alt="">
+                </ul>
+            </section>
+        </article>
+        <footer class="clearfix">
+            <div class="l">
+                <a href="#">
+                    <img src="./img/icon-bottom-chat.jpg">
+                    <span>我要留言</span>
+                    <p>我们将竭诚为您服务</p>
+                </a>
+            </div>
+            <div class="m">
+                <a href="#">
+                    <span>在线咨询</span></a>
+            </div>
+            <div class="r">
+                <a href="tel:0371-67986666">
+                    <img src="./img/icon-bottom-tel.jpg" alt="">
+                    <span>联系我们</span>
+                    <p>0371-67986666</p>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+<!-- 先引入 Vue -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/mint-ui@2.2.13/lib/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            popupVisible: false
+        },
+        methods: {
+            handleClick: function () {
+                this.popupVisible = true
+            }
+        }
+    })
+</script>
+<script>
+    window.onload = function () {
+        if (document.documentElement.clientWidth <= 750) {
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px'
+        } else {
+            document.documentElement.style.fontSize = '100px'
+        }
+
+    }
+</script>
+
+</html>
